@@ -1,1 +1,3 @@
-# charts_synthetic_data
+# Synthetic data of Charts
+
+## Requirements
