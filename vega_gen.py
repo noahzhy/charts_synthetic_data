@@ -2,6 +2,7 @@ import time
 import random
 import hashlib
 
+import tqdm
 import pandas as pd
 import altair as alt
 from altair_saver import save
@@ -196,5 +197,5 @@ def synth_data():
 # main
 if __name__ == "__main__":
     # generate 100 random charts
-    for i in range(8):
+    for i in tqdm.tqdm(range(10000)):
         synth_data()
