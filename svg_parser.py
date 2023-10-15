@@ -55,34 +55,32 @@ def svg2yolo(dir_path):
                 f.write(f'{x},{y},{w},{h},{c}\n')
 
 
+def show_data(svg_path):
+    rectangles = parse_svg_rectangles(svg_path)
+
+    # Convert SVG to PNG
+    cairosvg.svg2png(url=svg_path, write_to='tmp.png')
+
+    # draw rectangles on raw image via PIL
+    im = Image.open('tmp.png')
+    draw = ImageDraw.Draw(im)
+
+    for rectangle in rectangles:
+        x, y, w, h, c = rectangle
+        # hex color to rgb, for example: #ff0000 -> (255, 0, 0)
+        c = tuple(int(c[i:i + 2], 16) for i in (1, 3, 5))
+        draw.rectangle((x, y, x + w, y + h), outline=(0, 255, 0))
+        # draw a + in the center of rectangle, color is red
+        draw.text((x + w / 2, y + h / 2), "+", fill=(255, 0, 0))
+
+    # save to image
+    im.save('tmp.png')
+
+
 # main
 if __name__ == "__main__":
-    svg_file_path = "data/*.svg"
+    # # convert all svg files to png and yolo txt file
+    svg2yolo('h_data')
 
-    # convert all svg files to png and yolo txt file
-    svg2yolo('data')
-
-
-    # # random select one svg file
-    # svg_file_path = random.choice(glob.glob(svg_file_path))
-    # rectangles = parse_svg_rectangles(svg_file_path)
-
-    # # Convert SVG to PNG
-    # cairosvg.svg2png(url=svg_file_path, write_to='test.png')
-
-    # # draw rectangles on raw image via PIL
-    # im = Image.open('test.png')
-    # draw = ImageDraw.Draw(im)
-
-    # for rectangle in rectangles:
-    #     x, y, w, h, c = rectangle
-    #     # hex color to rgb, for example: #ff0000 -> (255, 0, 0)
-    #     c = tuple(int(c[i:i + 2], 16) for i in (1, 3, 5))
-    #     draw.rectangle((x, y, x + w, y + h), outline=c)
-    #     # draw a + in the center of rectangle, color is red
-    #     draw.text((x + w / 2, y + h / 2), "+", fill=(255, 0, 0))
-
-    # # save to image
-    # im.save('test.png')
-
-
+    # # show data
+    # show_data('chart.svg')

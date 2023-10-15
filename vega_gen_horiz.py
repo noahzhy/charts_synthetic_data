@@ -59,7 +59,7 @@ def old_theme():
                 # hide title
                 "titleFontSize": 0,
             },
-            "axisX": {
+            "axisY": {
                 # hide axis x
                 "title": "",
                 "bandPosition": random.choice([0, 0.5, 1]),
@@ -70,7 +70,7 @@ def old_theme():
                 # transparent
                 "gridOpacity": random.uniform(0.1, 1),
                 "gridWidth": random.uniform(0, 1.0),
-                "labelAngle": random.choice([45, 60, -90, -45, -60]),
+                # "labelAngle": random.choice([45, 60, -90, -45, -60]),
                 # font
                 "labelFont": random.choice(fonts),
                 # font size
@@ -78,7 +78,7 @@ def old_theme():
                 # padding
                 "labelPadding": random.randint(2, 5),
             },
-            "axisY": {
+            "axisX": {
                 # hide axis y
                 "title": "",
                 # hide label
@@ -127,7 +127,8 @@ def random_file_name():
 # func to generate random properties
 def random_properties():
     return {
-        'width': random.randint(18, 25),
+        'width': random.randint(15, 20),
+        'height': random.randint(15, 20),
     }
 
 
@@ -181,8 +182,8 @@ def synth_data(save_dir='data'):
     ).mark_bar(
         size=properties['width'] + random.randint(-8, -2),
     ).encode(
-        x="x:N",
-        y="y:Q",
+        x="y:Q",
+        y="x:N",
         # random color or fixed color
         color="x:N" if random.uniform(0, 1) > 0.5 else alt.value(random_color()),
     ).properties(
@@ -198,5 +199,5 @@ def synth_data(save_dir='data'):
 # main
 if __name__ == "__main__":
     # generate 100 random charts
-    for i in tqdm.tqdm(range(9)):
+    for i in tqdm.tqdm(range(20000)):
         synth_data(save_dir='h_data')
