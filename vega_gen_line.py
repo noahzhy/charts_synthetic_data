@@ -172,7 +172,7 @@ def random_title():
     }
 
 
-def synth_data(save_dir='data'):
+def synth_data(save_dir='data', debug=False):
     properties = random_properties()
     data = pd.DataFrame(random_bar(x_num=[5, 25]))
 
@@ -191,6 +191,10 @@ def synth_data(save_dir='data'):
     )
 
     _fname = random_file_name()
+
+    if debug:
+        _fname = 'debug'
+
     # save to .svg file
     charts.save(os.path.join(save_dir, _fname + '.svg'))
     print('save to', os.path.join(save_dir, _fname + '.svg'))
@@ -198,6 +202,5 @@ def synth_data(save_dir='data'):
 
 # main
 if __name__ == "__main__":
-    # generate 100 random charts
-    for i in tqdm.tqdm(range(9)):
-        synth_data(save_dir='h_data')
+    for i in tqdm.tqdm(range(1)):
+        synth_data(save_dir='', debug=True)

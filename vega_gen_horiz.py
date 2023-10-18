@@ -172,6 +172,7 @@ def random_title():
         'color': '#000000',
     }
 
+
 def synth_data(save_dir='data'):
     properties = random_properties()
     data = pd.DataFrame(random_bar(x_num=[5, 25]))
