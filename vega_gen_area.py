@@ -4,7 +4,6 @@ import random
 import hashlib
 
 import tqdm
-import numpy as np
 import pandas as pd
 import altair as alt
 from altair_saver import save
@@ -40,15 +39,8 @@ def random_color():
     return random.choice(colors)
 
 
-current_bg_color = ""
-def random_background():
-    global current_bg_color
-    current_bg_color = random.choice(backgrounds)
-    return current_bg_color
-
-
 def old_theme():
-    theme_config = {
+    return {
         "config": {
             "title": {
                 "font": random.choice(fonts),
@@ -71,13 +63,14 @@ def old_theme():
                 # hide axis x
                 "title": "",
                 "bandPosition": random.choice([0, 0.5, 1]),
-                "grid": True,
+                "grid": random.choice([True, False]),
                 # hide stick
                 "ticks": False,
                 "gridColor": '#000000',
                 # transparent
-                "gridOpacity": random.uniform(0.2, 0.8),
-                "gridWidth": random.uniform(0.2, 1.0),
+                "gridOpacity": random.uniform(0.1, 1),
+                "gridWidth": random.uniform(0, 1.0),
+                # "labelAngle": random.choice([45, 60, -90, -45, -60]),
                 "labelAngle": 0,
                 # font
                 "labelFont": random.choice(fonts),
@@ -89,12 +82,12 @@ def old_theme():
             "axisY": {
                 # hide axis y
                 "title": "",
-                "bandPosition": random.choice([0, 0.5, 1]),
-                "labels": True,
-                "grid": True,
+                # hide label
+                "labels": random.choice([True, False]),
+                "grid": random.choice([True, False]),
                 "gridColor": '#000000',
-                "gridOpacity": random.uniform(0.2, 0.8),
-                "gridWidth": random.uniform(0.2, 1.5),
+                "gridOpacity": random.uniform(0.1, 1),
+                "gridWidth": random.uniform(0, 1.5),
                 "labelAngle": 0,
                 # font
                 "labelFont": random.choice(fonts),
@@ -106,33 +99,12 @@ def old_theme():
                 "ticks": False if random.uniform(0, 1) > 0.5 else True,
             },
             # transparent background
-            "background": random_background(),
+            "background": random.choice(backgrounds),
             # bar color
-            # "mark": {
-            #     "color": random_color(),
-            #     "stroke": "#000" if random.uniform(0, 1) > 0.5 else "transparent",
-            #     "strokeWidth": random.uniform(1.0, 3.5),
-            # },
-            # line color
-            "line": {
-                "filled": False,
-                "strokeWidth": random.uniform(1.0, 3.5),
-                "fillOpacity": 1,
-                # point color
-                "point": {
-                    "filled": False,
-                    "size": random.uniform(10, 20),
-                    "fillOpacity": 1,
-                    "fill": current_bg_color,
-                    # stroke width
-                    "strokeWidth": random.uniform(0.2, 1.0),
-                } if random.uniform(0, 1) > 0.5 else {
-                    "filled": True,
-                },
-            } if random.uniform(0, 1) > 0.5 else {
-                "filled": False,
-                "strokeWidth": random.uniform(1.0, 3.5),
-                "fillOpacity": 1,
+            "mark": {
+                "color": random_color(),
+                "stroke": "#000" if random.uniform(0, 1) > 0.5 else "transparent",
+                "strokeWidth": random.uniform(0.5, 1.5),
             },
             # color range
             "range": {
@@ -140,14 +112,11 @@ def old_theme():
             },
         }
     }
-    return theme_config
 
 
 # register
 alt.themes.register("old_theme", old_theme)
 alt.themes.enable("old_theme")
-
-print('current background color:', current_bg_color)
 
 
 # random name with md5 hash
@@ -156,11 +125,11 @@ def random_file_name():
     return _name
 
 
-# # func to generate random properties
-# def random_properties():
-#     return {
-#         'width': random.randint(18, 25),
-#     }
+# func to generate random properties
+def random_properties():
+    return {
+        'width': random.randint(18, 25),
+    }
 
 
 # func to generate random data
@@ -169,32 +138,32 @@ def random_bar(x_num=10, y_max=100, y_min=0):
     if isinstance(x_num, list):
         x_num = random.randint(x_num[0], x_num[1])
 
-    # random year invertal
-    _y_step = random.randint(1, 20)
+    # random y-axis
+    _y_list = []
+    # scale in [5, 10, 20, 50, 100]
+    scale = random.choice([1, 5, 10, 20, 50, 100])
 
-    datas = pd.DataFrame()
-    for i in range(random.randint(2, 4)):
-        # random start value in [0, 50]
-        _y_start = random.randint(0, 80)
-        # random y_max and y_min from [0, 100]
-        _y_min = random.randint(_y_start, 100)
-        _y_max = max(_y_min, 150)
-        # random symbol
-        _symbol = "symbol_" + str(i)
-        # random date
-        _date = pd.date_range('1900', '2000', freq='{}Y'.format(_y_step))[:x_num]
-        _date = _date.strftime('%Y')
-        # random price
-        _price = np.random.randint(_y_min, _y_max, size=len(_date))
-        # add to datas
-        symbol_data = pd.DataFrame({
-            'c': _symbol,
-            'x': _date,
-            'y': _price,
-        })
-        # pandas data extend
-        datas = pd.concat([datas, symbol_data])
-    return datas
+    for i in range(x_num):
+        _y_list.append(random.randint(y_min, y_max) * scale)
+
+    # random y-axis start
+    # step in [1, 2, 5, 10, 20, 50, 100]
+    _step = random.choice([1, 2, 5, 10, 20, 50, 100])
+    x_min = min(1000, 2000-_step*x_num)
+    _x_start = random.randint(x_min, 2000-_step*x_num)
+    _x_list = [i for i in range(_x_start, _x_start+x_num*_step, _step)]
+
+    # colors = []
+    # # random number
+    # for i in range(x_num):
+    #     colors.append(random.randint(1, 5))
+
+    return {
+        'x': _x_list,
+        'y': _y_list,
+        
+        # 'c': colors,
+    }
 
 
 def random_title():
@@ -212,27 +181,29 @@ def random_title():
 
 
 def synth_data(save_dir='data', debug=False):
-    # properties = random_properties()
-    data = random_bar(x_num=[10, 20])
+    properties = random_properties()
+    data = pd.DataFrame(random_bar(x_num=[5, 25]))
 
     charts = alt.Chart(
         data,
         title=random_title(),
-    ).mark_line(
+    ).mark_area(
+        # size=properties['width'] + random.randint(-8, -2),
     ).encode(
-        x="x:T",
+        x="x:N",
         y="y:Q",
-        color='c:N',
+        # random color or fixed color
+        color="x:N" if random.uniform(0, 1) > 0.5 else alt.value(random_color()),
     ).properties(
-        # x-axis scale
-        width=random.randint(200, 500),
+        width=alt.Step(properties['width']),
     )
 
-    _fname = random_file_name() if not debug else 'debug'
+    _fname = random_file_name()
+
+    if debug:
+        _fname = 'debug'
 
     # save to .svg file
-    print('===========')
-    # get theme background color
     charts.save(os.path.join(save_dir, _fname + '.svg'))
     print('save to', os.path.join(save_dir, _fname + '.svg'))
 
