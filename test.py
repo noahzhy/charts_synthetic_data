@@ -1,29 +1,14 @@
-import altair as alt
-from vega_datasets import data
+import re
 
-source = data.iowa_electricity()
+# 输入字符串
+d = "M0,18.75L50.32720856656121,37.5L100.65441713312242,71.24999999999999L150.9954064249209,77.49999999999999L201.3226149914821,95L251.66360428328062,112.5L301.9908128498418,33.74999999999999L352.33180214164025,87.5L402.6590107082015,70L453,46.24999999999999"
 
-print(source)
+# 定义正则表达式模式
+pattern = r'[ML]\d+\.\d+,?\d*'
 
-charts = alt.Chart(source).mark_area().encode(
-    x="year:T",
-    y="net_generation:Q",
-    color="source:N"
-)
-# save to data/debug.svg
-charts.save('debug.svg')
+# 使用正则表达式找到匹配项
+matches = re.findall(pattern, d)
 
-import altair as alt
-from vega_datasets import data
-
-source = data.stocks()
-print(source)
-
-charts = alt.Chart(source).mark_line().encode(
-    x='date:T',
-    y='price:Q',
-    color='symbol:N',
-)
-
-# save to data/debug.svg
-charts.save('debug.svg')
+# 打印匹配项
+for match in matches:
+    print(match)
