@@ -1,1 +1,429 @@
-<svg class="marks" width="484" height="260" viewBox="0 0 484 260" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><rect width="484" height="260" style="fill: #ffebd8;"></rect><g transform="translate(24,42)"><g class="mark-group role-frame root"><g transform="translate(0,0)"><path class="background" d="M0.5,0.5h421v200h-421Z" style="fill: none; stroke: #ddd;"></path><g><g class="mark-group role-axis"><g transform="translate(0.5,200.5)"><path class="background" d="M0,0h0v0h0Z" style="pointer-events: none; fill: none;"></path><g><g class="mark-rule role-axis-grid" style="pointer-events: none;"><line transform="translate(52,-200)" x2="0" y2="200" style="fill: none; stroke: #000000; stroke-opacity: 0.54467184122452; stroke-width: 0.28548719586269417; opacity: 1;"></line><line transform="translate(104,-200)" x2="0" y2="200" style="fill: none; stroke: #000000; stroke-opacity: 0.54467184122452; stroke-width: 0.28548719586269417; opacity: 1;"></line><line transform="translate(156,-200)" x2="0" y2="200" style="fill: none; stroke: #000000; stroke-opacity: 0.54467184122452; stroke-width: 0.28548719586269417; opacity: 1;"></line><line transform="translate(208,-200)" x2="0" y2="200" style="fill: none; stroke: #000000; stroke-opacity: 0.54467184122452; stroke-width: 0.28548719586269417; opacity: 1;"></line><line transform="translate(260,-200)" x2="0" y2="200" style="fill: none; stroke: #000000; stroke-opacity: 0.54467184122452; stroke-width: 0.28548719586269417; opacity: 1;"></line><line transform="translate(312,-200)" x2="0" y2="200" style="fill: none; stroke: #000000; stroke-opacity: 0.54467184122452; stroke-width: 0.28548719586269417; opacity: 1;"></line><line transform="translate(364,-200)" x2="0" y2="200" style="fill: none; stroke: #000000; stroke-opacity: 0.54467184122452; stroke-width: 0.28548719586269417; opacity: 1;"></line><line transform="translate(416,-200)" x2="0" y2="200" style="fill: none; stroke: #000000; stroke-opacity: 0.54467184122452; stroke-width: 0.28548719586269417; opacity: 1;"></line></g></g><path class="foreground" d="" style="pointer-events: none; display: none; fill: none;"></path></g></g><g class="mark-group role-axis"><g transform="translate(0.5,0.5)"><path class="background" d="M0,0h0v0h0Z" style="pointer-events: none; fill: none;"></path><g><g class="mark-rule role-axis-grid" style="pointer-events: none;"><line transform="translate(0,200)" x2="421" y2="0" style="fill: none; stroke: #000000; stroke-opacity: 0.2131023323850865; stroke-width: 0.3679391600629074; opacity: 1;"></line><line transform="translate(0,188)" x2="421" y2="0" style="fill: none; stroke: #000000; stroke-opacity: 0.2131023323850865; stroke-width: 0.3679391600629074; opacity: 1;"></line><line transform="translate(0,175)" x2="421" y2="0" style="fill: none; stroke: #000000; stroke-opacity: 0.2131023323850865; stroke-width: 0.3679391600629074; opacity: 1;"></line><line transform="translate(0,163)" x2="421" y2="0" style="fill: none; stroke: #000000; stroke-opacity: 0.2131023323850865; stroke-width: 0.3679391600629074; opacity: 1;"></line><line transform="translate(0,150)" x2="421" y2="0" style="fill: none; stroke: #000000; stroke-opacity: 0.2131023323850865; stroke-width: 0.3679391600629074; opacity: 1;"></line><line transform="translate(0,138)" x2="421" y2="0" style="fill: none; stroke: #000000; stroke-opacity: 0.2131023323850865; stroke-width: 0.3679391600629074; opacity: 1;"></line><line transform="translate(0,125)" x2="421" y2="0" style="fill: none; stroke: #000000; stroke-opacity: 0.2131023323850865; stroke-width: 0.3679391600629074; opacity: 1;"></line><line transform="translate(0,113)" x2="421" y2="0" style="fill: none; stroke: #000000; stroke-opacity: 0.2131023323850865; stroke-width: 0.3679391600629074; opacity: 1;"></line><line transform="translate(0,100)" x2="421" y2="0" style="fill: none; stroke: #000000; stroke-opacity: 0.2131023323850865; stroke-width: 0.3679391600629074; opacity: 1;"></line><line transform="translate(0,88)" x2="421" y2="0" style="fill: none; stroke: #000000; stroke-opacity: 0.2131023323850865; stroke-width: 0.3679391600629074; opacity: 1;"></line><line transform="translate(0,75)" x2="421" y2="0" style="fill: none; stroke: #000000; stroke-opacity: 0.2131023323850865; stroke-width: 0.3679391600629074; opacity: 1;"></line><line transform="translate(0,63)" x2="421" y2="0" style="fill: none; stroke: #000000; stroke-opacity: 0.2131023323850865; stroke-width: 0.3679391600629074; opacity: 1;"></line><line transform="translate(0,50)" x2="421" y2="0" style="fill: none; stroke: #000000; stroke-opacity: 0.2131023323850865; stroke-width: 0.3679391600629074; opacity: 1;"></line><line transform="translate(0,38)" x2="421" y2="0" style="fill: none; stroke: #000000; stroke-opacity: 0.2131023323850865; stroke-width: 0.3679391600629074; opacity: 1;"></line><line transform="translate(0,25)" x2="421" y2="0" style="fill: none; stroke: #000000; stroke-opacity: 0.2131023323850865; stroke-width: 0.3679391600629074; opacity: 1;"></line><line transform="translate(0,13)" x2="421" y2="0" style="fill: none; stroke: #000000; stroke-opacity: 0.2131023323850865; stroke-width: 0.3679391600629074; opacity: 1;"></line><line transform="translate(0,0)" x2="421" y2="0" style="fill: none; stroke: #000000; stroke-opacity: 0.2131023323850865; stroke-width: 0.3679391600629074; opacity: 1;"></line></g></g><path class="foreground" d="" style="pointer-events: none; display: none; fill: none;"></path></g></g><g class="mark-group role-axis"><g transform="translate(0.5,200.5)"><path class="background" d="M0,0h0v0h0Z" style="pointer-events: none; fill: none;"></path><g><g class="mark-text role-axis-label" style="pointer-events: none;"><text text-anchor="middle" transform="translate(51.963296434003716,11)" style="font-family: Courier; font-size: 10px; fill: #000; opacity: 1;">1910</text><text text-anchor="middle" transform="translate(103.93192918708806,11)" style="font-family: Courier; font-size: 10px; fill: #000; opacity: 1;">1920</text><text text-anchor="middle" transform="translate(155.91479212438736,11)" style="font-family: Courier; font-size: 10px; fill: #000; opacity: 1;">1930</text><text text-anchor="middle" transform="translate(207.8834248774717,11)" style="font-family: Courier; font-size: 10px; fill: #000; opacity: 1;">1940</text><text text-anchor="middle" transform="translate(259.866287814771,11)" style="font-family: Courier; font-size: 10px; fill: #000; opacity: 1;">1950</text><text text-anchor="middle" transform="translate(311.8349205678553,11)" style="font-family: Courier; font-size: 10px; fill: #000; opacity: 1;">1960</text><text text-anchor="middle" transform="translate(363.81778350515464,11)" style="font-family: Courier; font-size: 10px; fill: #000; opacity: 1;">1970</text><text text-anchor="middle" transform="translate(415.786416258239,11)" style="font-family: Courier; font-size: 10px; fill: #000; opacity: 1;">1980</text></g><g class="mark-rule role-axis-domain" style="pointer-events: none;"><line transform="translate(0,0)" x2="421" y2="0" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"></line></g></g><path class="foreground" d="" style="pointer-events: none; display: none; fill: none;"></path></g></g><g class="mark-group role-axis"><g transform="translate(0.5,0.5)"><path class="background" d="M0,0h0v0h0Z" style="pointer-events: none; fill: none;"></path><g><g class="mark-text role-axis-label" style="pointer-events: none;"><text text-anchor="end" transform="translate(-2,203)" style="font-family: Impact; font-size: 11px; fill: #000; opacity: 1;">0</text><text text-anchor="end" transform="translate(-2,190.5)" style="font-family: Impact; font-size: 11px; fill: #000; opacity: 1;">10</text><text text-anchor="end" transform="translate(-2,178)" style="font-family: Impact; font-size: 11px; fill: #000; opacity: 1;">20</text><text text-anchor="end" transform="translate(-2,165.5)" style="font-family: Impact; font-size: 11px; fill: #000; opacity: 1;">30</text><text text-anchor="end" transform="translate(-2,153)" style="font-family: Impact; font-size: 11px; fill: #000; opacity: 1;">40</text><text text-anchor="end" transform="translate(-2,140.5)" style="font-family: Impact; font-size: 11px; fill: #000; opacity: 1;">50</text><text text-anchor="end" transform="translate(-2,128)" style="font-family: Impact; font-size: 11px; fill: #000; opacity: 1;">60</text><text text-anchor="end" transform="translate(-2,115.5)" style="font-family: Impact; font-size: 11px; fill: #000; opacity: 1;">70</text><text text-anchor="end" transform="translate(-2,103)" style="font-family: Impact; font-size: 11px; fill: #000; opacity: 1;">80</text><text text-anchor="end" transform="translate(-2,90.5)" style="font-family: Impact; font-size: 11px; fill: #000; opacity: 1;">90</text><text text-anchor="end" transform="translate(-2,78)" style="font-family: Impact; font-size: 11px; fill: #000; opacity: 1;">100</text><text text-anchor="end" transform="translate(-2,65.5)" style="font-family: Impact; font-size: 11px; fill: #000; opacity: 1;">110</text><text text-anchor="end" transform="translate(-2,53)" style="font-family: Impact; font-size: 11px; fill: #000; opacity: 1;">120</text><text text-anchor="end" transform="translate(-2,40.5)" style="font-family: Impact; font-size: 11px; fill: #000; opacity: 1;">130</text><text text-anchor="end" transform="translate(-2,28)" style="font-family: Impact; font-size: 11px; fill: #000; opacity: 1;">140</text><text text-anchor="end" transform="translate(-2,15.5)" style="font-family: Impact; font-size: 11px; fill: #000; opacity: 1;">150</text><text text-anchor="end" transform="translate(-2,3)" style="font-family: Impact; font-size: 11px; fill: #000; opacity: 1;">160</text></g><g class="mark-rule role-axis-domain" style="pointer-events: none;"><line transform="translate(0,200)" x2="0" y2="-200" style="fill: none; stroke: #888; stroke-width: 1; opacity: 1;"></line></g></g><path class="foreground" d="" style="pointer-events: none; display: none; fill: none;"></path></g></g><g class="mark-group role-scope layer_0_pathgroup"><g transform="translate(0,0)"><path class="background" d="M0,0h421v200h-421Z" style="fill: none;"></path><g><g class="mark-line role-mark layer_0_marks"><path d="M0,31.25L46.774615514618894,22.500000000000007L93.54923102923779,78.75000000000001L140.3238465438567,64.99999999999999L187.09846205847558,18.75L233.88730775730946,88.75L280.66192327192834,44.99999999999999L327.43653878654726,14.999999999999991L374.2111543011661,96.24999999999999L421,43.75" style="fill: none; fill-opacity: 1; stroke: #bbbdb4; stroke-width: 1.0406457547258186;"></path></g></g><path class="foreground" d="" style="display: none; fill: none;"></path></g><g transform="translate(0,0)"><path class="background" d="M0,0h421v200h-421Z" style="fill: none;"></path><g><g class="mark-line role-mark layer_0_marks"><path d="M0,41.25000000000001L46.774615514618894,91.25000000000001L93.54923102923779,62.5L140.3238465438567,37.5L187.09846205847558,100L233.88730775730946,37.5L280.66192327192834,43.75L327.43653878654726,52.49999999999999L374.2111543011661,110.00000000000001L421,16.250000000000007" style="fill: none; fill-opacity: 1; stroke: #001b76; stroke-width: 1.0406457547258186;"></path></g></g><path class="foreground" d="" style="display: none; fill: none;"></path></g><g transform="translate(0,0)"><path class="background" d="M0,0h421v200h-421Z" style="fill: none;"></path><g><g class="mark-line role-mark layer_0_marks"><path d="M0,96.24999999999999L46.774615514618894,25L93.54923102923779,103.75000000000001L140.3238465438567,14.999999999999991L187.09846205847558,108.74999999999999L233.88730775730946,19.999999999999996L280.66192327192834,82.5L327.43653878654726,107.5L374.2111543011661,47.50000000000001L421,36.25000000000001" style="fill: none; fill-opacity: 1; stroke: #c9b598; stroke-width: 1.0406457547258186;"></path></g></g><path class="foreground" d="" style="display: none; fill: none;"></path></g></g><g class="mark-symbol role-mark layer_1_marks"><path transform="translate(0,31.25)" d="M1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,-1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,1.736318723455157,0" style="fill: #ffebd8; fill-opacity: 1; stroke: #bbbdb4; stroke-width: 0.49905452624511937; opacity: 1;"></path><path transform="translate(46.774615514618894,22.500000000000007)" d="M1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,-1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,1.736318723455157,0" style="fill: #ffebd8; fill-opacity: 1; stroke: #bbbdb4; stroke-width: 0.49905452624511937; opacity: 1;"></path><path transform="translate(93.54923102923779,78.75000000000001)" d="M1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,-1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,1.736318723455157,0" style="fill: #ffebd8; fill-opacity: 1; stroke: #bbbdb4; stroke-width: 0.49905452624511937; opacity: 1;"></path><path transform="translate(140.3238465438567,64.99999999999999)" d="M1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,-1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,1.736318723455157,0" style="fill: #ffebd8; fill-opacity: 1; stroke: #bbbdb4; stroke-width: 0.49905452624511937; opacity: 1;"></path><path transform="translate(187.09846205847558,18.75)" d="M1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,-1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,1.736318723455157,0" style="fill: #ffebd8; fill-opacity: 1; stroke: #bbbdb4; stroke-width: 0.49905452624511937; opacity: 1;"></path><path transform="translate(233.88730775730946,88.75)" d="M1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,-1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,1.736318723455157,0" style="fill: #ffebd8; fill-opacity: 1; stroke: #bbbdb4; stroke-width: 0.49905452624511937; opacity: 1;"></path><path transform="translate(280.66192327192834,44.99999999999999)" d="M1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,-1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,1.736318723455157,0" style="fill: #ffebd8; fill-opacity: 1; stroke: #bbbdb4; stroke-width: 0.49905452624511937; opacity: 1;"></path><path transform="translate(327.43653878654726,14.999999999999991)" d="M1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,-1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,1.736318723455157,0" style="fill: #ffebd8; fill-opacity: 1; stroke: #bbbdb4; stroke-width: 0.49905452624511937; opacity: 1;"></path><path transform="translate(374.2111543011661,96.24999999999999)" d="M1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,-1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,1.736318723455157,0" style="fill: #ffebd8; fill-opacity: 1; stroke: #bbbdb4; stroke-width: 0.49905452624511937; opacity: 1;"></path><path transform="translate(421,43.75)" d="M1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,-1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,1.736318723455157,0" style="fill: #ffebd8; fill-opacity: 1; stroke: #bbbdb4; stroke-width: 0.49905452624511937; opacity: 1;"></path><path transform="translate(0,41.25000000000001)" d="M1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,-1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,1.736318723455157,0" style="fill: #ffebd8; fill-opacity: 1; stroke: #001b76; stroke-width: 0.49905452624511937; opacity: 1;"></path><path transform="translate(46.774615514618894,91.25000000000001)" d="M1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,-1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,1.736318723455157,0" style="fill: #ffebd8; fill-opacity: 1; stroke: #001b76; stroke-width: 0.49905452624511937; opacity: 1;"></path><path transform="translate(93.54923102923779,62.5)" d="M1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,-1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,1.736318723455157,0" style="fill: #ffebd8; fill-opacity: 1; stroke: #001b76; stroke-width: 0.49905452624511937; opacity: 1;"></path><path transform="translate(140.3238465438567,37.5)" d="M1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,-1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,1.736318723455157,0" style="fill: #ffebd8; fill-opacity: 1; stroke: #001b76; stroke-width: 0.49905452624511937; opacity: 1;"></path><path transform="translate(187.09846205847558,100)" d="M1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,-1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,1.736318723455157,0" style="fill: #ffebd8; fill-opacity: 1; stroke: #001b76; stroke-width: 0.49905452624511937; opacity: 1;"></path><path transform="translate(233.88730775730946,37.5)" d="M1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,-1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,1.736318723455157,0" style="fill: #ffebd8; fill-opacity: 1; stroke: #001b76; stroke-width: 0.49905452624511937; opacity: 1;"></path><path transform="translate(280.66192327192834,43.75)" d="M1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,-1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,1.736318723455157,0" style="fill: #ffebd8; fill-opacity: 1; stroke: #001b76; stroke-width: 0.49905452624511937; opacity: 1;"></path><path transform="translate(327.43653878654726,52.49999999999999)" d="M1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,-1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,1.736318723455157,0" style="fill: #ffebd8; fill-opacity: 1; stroke: #001b76; stroke-width: 0.49905452624511937; opacity: 1;"></path><path transform="translate(374.2111543011661,110.00000000000001)" d="M1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,-1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,1.736318723455157,0" style="fill: #ffebd8; fill-opacity: 1; stroke: #001b76; stroke-width: 0.49905452624511937; opacity: 1;"></path><path transform="translate(421,16.250000000000007)" d="M1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,-1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,1.736318723455157,0" style="fill: #ffebd8; fill-opacity: 1; stroke: #001b76; stroke-width: 0.49905452624511937; opacity: 1;"></path><path transform="translate(0,96.24999999999999)" d="M1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,-1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,1.736318723455157,0" style="fill: #ffebd8; fill-opacity: 1; stroke: #c9b598; stroke-width: 0.49905452624511937; opacity: 1;"></path><path transform="translate(46.774615514618894,25)" d="M1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,-1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,1.736318723455157,0" style="fill: #ffebd8; fill-opacity: 1; stroke: #c9b598; stroke-width: 0.49905452624511937; opacity: 1;"></path><path transform="translate(93.54923102923779,103.75000000000001)" d="M1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,-1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,1.736318723455157,0" style="fill: #ffebd8; fill-opacity: 1; stroke: #c9b598; stroke-width: 0.49905452624511937; opacity: 1;"></path><path transform="translate(140.3238465438567,14.999999999999991)" d="M1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,-1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,1.736318723455157,0" style="fill: #ffebd8; fill-opacity: 1; stroke: #c9b598; stroke-width: 0.49905452624511937; opacity: 1;"></path><path transform="translate(187.09846205847558,108.74999999999999)" d="M1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,-1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,1.736318723455157,0" style="fill: #ffebd8; fill-opacity: 1; stroke: #c9b598; stroke-width: 0.49905452624511937; opacity: 1;"></path><path transform="translate(233.88730775730946,19.999999999999996)" d="M1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,-1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,1.736318723455157,0" style="fill: #ffebd8; fill-opacity: 1; stroke: #c9b598; stroke-width: 0.49905452624511937; opacity: 1;"></path><path transform="translate(280.66192327192834,82.5)" d="M1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,-1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,1.736318723455157,0" style="fill: #ffebd8; fill-opacity: 1; stroke: #c9b598; stroke-width: 0.49905452624511937; opacity: 1;"></path><path transform="translate(327.43653878654726,107.5)" d="M1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,-1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,1.736318723455157,0" style="fill: #ffebd8; fill-opacity: 1; stroke: #c9b598; stroke-width: 0.49905452624511937; opacity: 1;"></path><path transform="translate(374.2111543011661,47.50000000000001)" d="M1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,-1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,1.736318723455157,0" style="fill: #ffebd8; fill-opacity: 1; stroke: #c9b598; stroke-width: 0.49905452624511937; opacity: 1;"></path><path transform="translate(421,36.25000000000001)" d="M1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,-1.736318723455157,0A1.736318723455157,1.736318723455157,0,1,1,1.736318723455157,0" style="fill: #ffebd8; fill-opacity: 1; stroke: #c9b598; stroke-width: 0.49905452624511937; opacity: 1;"></path></g><g class="mark-group role-legend"><g transform="translate(441,0)"><path class="background" d="M0,0h14v25h-14Z" style="pointer-events: none; fill: none;"></path><g><g class="mark-group role-legend-entry"><g transform="translate(0,0)"><path class="background" d="M0,0h0v0h0Z" style="pointer-events: none; fill: none;"></path><g><g class="mark-group role-scope"><g transform="translate(0,0)"><path class="background" d="M0,0h14v6.040645754725818h-14Z" style="pointer-events: none; fill: none; opacity: 1;"></path><g><g class="mark-symbol role-legend-symbol" style="pointer-events: none;"><path transform="translate(5,5)" d="M0,0" style="fill: none; fill-opacity: 1; stroke: #bbbdb4; stroke-width: 1.0406457547258186; opacity: 1;"></path></g><g class="mark-text role-legend-label" style="pointer-events: none;"><text text-anchor="start" transform="translate(14,5)" style="font-family: sans-serif; font-size: 0px; fill: #000; opacity: 1;">symbol_0</text></g></g><path class="foreground" d="" style="pointer-events: none; display: none; fill: none;"></path></g><g transform="translate(0,9)"><path class="background" d="M0,0h14v6.040645754725819h-14Z" style="pointer-events: none; fill: none; opacity: 1;"></path><g><g class="mark-symbol role-legend-symbol" style="pointer-events: none;"><path transform="translate(5,5)" d="M0,0" style="fill: none; fill-opacity: 1; stroke: #001b76; stroke-width: 1.0406457547258186; opacity: 1;"></path></g><g class="mark-text role-legend-label" style="pointer-events: none;"><text text-anchor="start" transform="translate(14,5)" style="font-family: sans-serif; font-size: 0px; fill: #000; opacity: 1;">symbol_1</text></g></g><path class="foreground" d="" style="pointer-events: none; display: none; fill: none;"></path></g><g transform="translate(0,18)"><path class="background" d="M0,0h14v6.040645754725819h-14Z" style="pointer-events: none; fill: none; opacity: 1;"></path><g><g class="mark-symbol role-legend-symbol" style="pointer-events: none;"><path transform="translate(5,5)" d="M0,0" style="fill: none; fill-opacity: 1; stroke: #c9b598; stroke-width: 1.0406457547258186; opacity: 1;"></path></g><g class="mark-text role-legend-label" style="pointer-events: none;"><text text-anchor="start" transform="translate(14,5)" style="font-family: sans-serif; font-size: 0px; fill: #000; opacity: 1;">symbol_2</text></g></g><path class="foreground" d="" style="pointer-events: none; display: none; fill: none;"></path></g></g></g><path class="foreground" d="" style="pointer-events: none; display: none; fill: none;"></path></g></g></g><path class="foreground" d="" style="pointer-events: none; display: none; fill: none;"></path></g></g><g class="mark-group role-title"><g transform="translate(210.5,-37)"><path class="background" d="M0,0h0v0h0Z" style="pointer-events: none; fill: none;"></path><g><g class="mark-text role-title-text" style="pointer-events: none;"><text text-anchor="middle" transform="translate(0,13)" style="font-family: Gill Sans; font-size: 16px; font-style: italic; font-weight: bold; fill: #000000; opacity: 1;">kettles torpedo sterilizer</text></g></g><path class="foreground" d="" style="pointer-events: none; display: none; fill: none;"></path></g></g></g><path class="foreground" d="" style="display: none; fill: none;"></path></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="marks"
+    width="529" height="252" viewBox="0 0 529 252">
+    <rect width="529" height="252" fill="#fffacd" />
+    <g fill="none" stroke-miterlimit="10" transform="translate(36,31)">
+        <g class="mark-group role-frame root" role="graphics-object" aria-roledescription="group mark container">
+            <g transform="translate(0,0)">
+                <path class="background" aria-hidden="true" d="M0.5,0.5h453v200h-453Z" stroke="#ddd" />
+                <g>
+                    <g class="mark-group role-axis" aria-hidden="true">
+                        <g transform="translate(0.5,200.5)">
+                            <path class="background" aria-hidden="true" d="M0,0h0v0h0Z" pointer-events="none" />
+                            <g>
+                                <g class="mark-rule role-axis-grid" pointer-events="none">
+                                    <line transform="translate(50,-200)" x2="0" y2="200" stroke="#000000"
+                                        stroke-opacity="0.2614663723315479" stroke-width="0.809962335938593"
+                                        opacity="1" />
+                                    <line transform="translate(101,-200)" x2="0" y2="200" stroke="#000000"
+                                        stroke-opacity="0.2614663723315479" stroke-width="0.809962335938593"
+                                        opacity="1" />
+                                    <line transform="translate(151,-200)" x2="0" y2="200" stroke="#000000"
+                                        stroke-opacity="0.2614663723315479" stroke-width="0.809962335938593"
+                                        opacity="1" />
+                                    <line transform="translate(201,-200)" x2="0" y2="200" stroke="#000000"
+                                        stroke-opacity="0.2614663723315479" stroke-width="0.809962335938593"
+                                        opacity="1" />
+                                    <line transform="translate(252,-200)" x2="0" y2="200" stroke="#000000"
+                                        stroke-opacity="0.2614663723315479" stroke-width="0.809962335938593"
+                                        opacity="1" />
+                                    <line transform="translate(302,-200)" x2="0" y2="200" stroke="#000000"
+                                        stroke-opacity="0.2614663723315479" stroke-width="0.809962335938593"
+                                        opacity="1" />
+                                    <line transform="translate(352,-200)" x2="0" y2="200" stroke="#000000"
+                                        stroke-opacity="0.2614663723315479" stroke-width="0.809962335938593"
+                                        opacity="1" />
+                                    <line transform="translate(403,-200)" x2="0" y2="200" stroke="#000000"
+                                        stroke-opacity="0.2614663723315479" stroke-width="0.809962335938593"
+                                        opacity="1" />
+                                    <line transform="translate(453,-200)" x2="0" y2="200" stroke="#000000"
+                                        stroke-opacity="0.2614663723315479" stroke-width="0.809962335938593"
+                                        opacity="1" />
+                                </g>
+                            </g>
+                            <path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none" />
+                        </g>
+                    </g>
+                    <g class="mark-group role-axis" aria-hidden="true">
+                        <g transform="translate(0.5,0.5)">
+                            <path class="background" aria-hidden="true" d="M0,0h0v0h0Z" pointer-events="none" />
+                            <g>
+                                <g class="mark-rule role-axis-grid" pointer-events="none">
+                                    <line transform="translate(0,200)" x2="453" y2="0" stroke="#000000"
+                                        stroke-opacity="0.4134892090300948" stroke-width="0.8297499247242375"
+                                        opacity="1" />
+                                    <line transform="translate(0,188)" x2="453" y2="0" stroke="#000000"
+                                        stroke-opacity="0.4134892090300948" stroke-width="0.8297499247242375"
+                                        opacity="1" />
+                                    <line transform="translate(0,175)" x2="453" y2="0" stroke="#000000"
+                                        stroke-opacity="0.4134892090300948" stroke-width="0.8297499247242375"
+                                        opacity="1" />
+                                    <line transform="translate(0,163)" x2="453" y2="0" stroke="#000000"
+                                        stroke-opacity="0.4134892090300948" stroke-width="0.8297499247242375"
+                                        opacity="1" />
+                                    <line transform="translate(0,150)" x2="453" y2="0" stroke="#000000"
+                                        stroke-opacity="0.4134892090300948" stroke-width="0.8297499247242375"
+                                        opacity="1" />
+                                    <line transform="translate(0,138)" x2="453" y2="0" stroke="#000000"
+                                        stroke-opacity="0.4134892090300948" stroke-width="0.8297499247242375"
+                                        opacity="1" />
+                                    <line transform="translate(0,125)" x2="453" y2="0" stroke="#000000"
+                                        stroke-opacity="0.4134892090300948" stroke-width="0.8297499247242375"
+                                        opacity="1" />
+                                    <line transform="translate(0,113)" x2="453" y2="0" stroke="#000000"
+                                        stroke-opacity="0.4134892090300948" stroke-width="0.8297499247242375"
+                                        opacity="1" />
+                                    <line transform="translate(0,100)" x2="453" y2="0" stroke="#000000"
+                                        stroke-opacity="0.4134892090300948" stroke-width="0.8297499247242375"
+                                        opacity="1" />
+                                    <line transform="translate(0,88)" x2="453" y2="0" stroke="#000000"
+                                        stroke-opacity="0.4134892090300948" stroke-width="0.8297499247242375"
+                                        opacity="1" />
+                                    <line transform="translate(0,75)" x2="453" y2="0" stroke="#000000"
+                                        stroke-opacity="0.4134892090300948" stroke-width="0.8297499247242375"
+                                        opacity="1" />
+                                    <line transform="translate(0,63)" x2="453" y2="0" stroke="#000000"
+                                        stroke-opacity="0.4134892090300948" stroke-width="0.8297499247242375"
+                                        opacity="1" />
+                                    <line transform="translate(0,50)" x2="453" y2="0" stroke="#000000"
+                                        stroke-opacity="0.4134892090300948" stroke-width="0.8297499247242375"
+                                        opacity="1" />
+                                    <line transform="translate(0,38)" x2="453" y2="0" stroke="#000000"
+                                        stroke-opacity="0.4134892090300948" stroke-width="0.8297499247242375"
+                                        opacity="1" />
+                                    <line transform="translate(0,25)" x2="453" y2="0" stroke="#000000"
+                                        stroke-opacity="0.4134892090300948" stroke-width="0.8297499247242375"
+                                        opacity="1" />
+                                    <line transform="translate(0,13)" x2="453" y2="0" stroke="#000000"
+                                        stroke-opacity="0.4134892090300948" stroke-width="0.8297499247242375"
+                                        opacity="1" />
+                                    <line transform="translate(0,0)" x2="453" y2="0" stroke="#000000"
+                                        stroke-opacity="0.4134892090300948" stroke-width="0.8297499247242375"
+                                        opacity="1" />
+                                </g>
+                            </g>
+                            <path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none" />
+                        </g>
+                    </g>
+                    <g class="mark-group role-axis" role="graphics-symbol" aria-roledescription="axis"
+                        aria-label="X-axis for a time scale with values from Monday, 01 January 1900, 8:27:52 AM to Monday, 01 January 1990, 9:00:00 AM">
+                        <g transform="translate(0.5,200.5)">
+                            <path class="background" aria-hidden="true" d="M0,0h0v0h0Z" pointer-events="none" />
+                            <g>
+                                <g class="mark-text role-axis-label" pointer-events="none"><text text-anchor="middle"
+                                        transform="translate(50.32232789303967,13)" font-family="Lucida Console"
+                                        font-size="14px" fill="#000" opacity="1">1910</text><text text-anchor="middle"
+                                        transform="translate(100.64924936115843,13)" font-family="Lucida Console"
+                                        font-size="14px" fill="#000" opacity="0">1920</text><text text-anchor="middle"
+                                        transform="translate(150.99023865295692,13)" font-family="Lucida Console"
+                                        font-size="14px" fill="#000" opacity="1">1930</text><text text-anchor="middle"
+                                        transform="translate(201.31744721951813,13)" font-family="Lucida Console"
+                                        font-size="14px" fill="#000" opacity="0">1940</text><text text-anchor="middle"
+                                        transform="translate(251.6584365113166,13)" font-family="Lucida Console"
+                                        font-size="14px" fill="#000" opacity="1">1950</text><text text-anchor="middle"
+                                        transform="translate(301.98593217632026,13)" font-family="Lucida Console"
+                                        font-size="14px" fill="#000" opacity="0">1960</text><text text-anchor="middle"
+                                        transform="translate(352.32663436967636,13)" font-family="Lucida Console"
+                                        font-size="14px" fill="#000" opacity="1">1970</text><text text-anchor="middle"
+                                        transform="translate(402.6538429362375,13)" font-family="Lucida Console"
+                                        font-size="14px" fill="#000" opacity="0">1980</text><text text-anchor="end"
+                                        transform="translate(452.994832228036,13)" font-family="Lucida Console"
+                                        font-size="14px" fill="#000" opacity="1">1990</text></g>
+                                <g class="mark-rule role-axis-domain" pointer-events="none">
+                                    <line transform="translate(0,0)" x2="453" y2="0" stroke="#888" stroke-width="1"
+                                        opacity="1" />
+                                </g>
+                            </g>
+                            <path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none" />
+                        </g>
+                    </g>
+                    <g class="mark-group role-axis" role="graphics-symbol" aria-roledescription="axis"
+                        aria-label="Y-axis for a linear scale with values from 0 to 160">
+                        <g transform="translate(0.5,0.5)">
+                            <path class="background" aria-hidden="true" d="M0,0h0v0h0Z" pointer-events="none" />
+                            <g>
+                                <g class="mark-rule role-axis-tick" pointer-events="none">
+                                    <line transform="translate(0,200)" x2="-5" y2="0" stroke="#888" stroke-width="1"
+                                        opacity="1" />
+                                    <line transform="translate(0,188)" x2="-5" y2="0" stroke="#888" stroke-width="1"
+                                        opacity="1" />
+                                    <line transform="translate(0,175)" x2="-5" y2="0" stroke="#888" stroke-width="1"
+                                        opacity="1" />
+                                    <line transform="translate(0,163)" x2="-5" y2="0" stroke="#888" stroke-width="1"
+                                        opacity="1" />
+                                    <line transform="translate(0,150)" x2="-5" y2="0" stroke="#888" stroke-width="1"
+                                        opacity="1" />
+                                    <line transform="translate(0,138)" x2="-5" y2="0" stroke="#888" stroke-width="1"
+                                        opacity="1" />
+                                    <line transform="translate(0,125)" x2="-5" y2="0" stroke="#888" stroke-width="1"
+                                        opacity="1" />
+                                    <line transform="translate(0,113)" x2="-5" y2="0" stroke="#888" stroke-width="1"
+                                        opacity="1" />
+                                    <line transform="translate(0,100)" x2="-5" y2="0" stroke="#888" stroke-width="1"
+                                        opacity="1" />
+                                    <line transform="translate(0,88)" x2="-5" y2="0" stroke="#888" stroke-width="1"
+                                        opacity="1" />
+                                    <line transform="translate(0,75)" x2="-5" y2="0" stroke="#888" stroke-width="1"
+                                        opacity="1" />
+                                    <line transform="translate(0,63)" x2="-5" y2="0" stroke="#888" stroke-width="1"
+                                        opacity="1" />
+                                    <line transform="translate(0,50)" x2="-5" y2="0" stroke="#888" stroke-width="1"
+                                        opacity="1" />
+                                    <line transform="translate(0,38)" x2="-5" y2="0" stroke="#888" stroke-width="1"
+                                        opacity="1" />
+                                    <line transform="translate(0,25)" x2="-5" y2="0" stroke="#888" stroke-width="1"
+                                        opacity="1" />
+                                    <line transform="translate(0,13)" x2="-5" y2="0" stroke="#888" stroke-width="1"
+                                        opacity="1" />
+                                    <line transform="translate(0,0)" x2="-5" y2="0" stroke="#888" stroke-width="1"
+                                        opacity="1" />
+                                </g>
+                                <g class="mark-text role-axis-label" pointer-events="none"><text text-anchor="end"
+                                        transform="translate(-7,205)" font-family="Palatino" font-size="16px"
+                                        fill="#000" opacity="1">0</text><text text-anchor="end"
+                                        transform="translate(-7,192.5)" font-family="Palatino" font-size="16px"
+                                        fill="#000" opacity="0">10</text><text text-anchor="end"
+                                        transform="translate(-7,180)" font-family="Palatino" font-size="16px"
+                                        fill="#000" opacity="1">20</text><text text-anchor="end"
+                                        transform="translate(-7,167.5)" font-family="Palatino" font-size="16px"
+                                        fill="#000" opacity="0">30</text><text text-anchor="end"
+                                        transform="translate(-7,155)" font-family="Palatino" font-size="16px"
+                                        fill="#000" opacity="1">40</text><text text-anchor="end"
+                                        transform="translate(-7,142.5)" font-family="Palatino" font-size="16px"
+                                        fill="#000" opacity="0">50</text><text text-anchor="end"
+                                        transform="translate(-7,130)" font-family="Palatino" font-size="16px"
+                                        fill="#000" opacity="1">60</text><text text-anchor="end"
+                                        transform="translate(-7,117.5)" font-family="Palatino" font-size="16px"
+                                        fill="#000" opacity="0">70</text><text text-anchor="end"
+                                        transform="translate(-7,105)" font-family="Palatino" font-size="16px"
+                                        fill="#000" opacity="1">80</text><text text-anchor="end"
+                                        transform="translate(-7,92.5)" font-family="Palatino" font-size="16px"
+                                        fill="#000" opacity="0">90</text><text text-anchor="end"
+                                        transform="translate(-7,80)" font-family="Palatino" font-size="16px" fill="#000"
+                                        opacity="1">100</text><text text-anchor="end" transform="translate(-7,67.5)"
+                                        font-family="Palatino" font-size="16px" fill="#000" opacity="0">110</text><text
+                                        text-anchor="end" transform="translate(-7,55)" font-family="Palatino"
+                                        font-size="16px" fill="#000" opacity="1">120</text><text text-anchor="end"
+                                        transform="translate(-7,42.5)" font-family="Palatino" font-size="16px"
+                                        fill="#000" opacity="0">130</text><text text-anchor="end"
+                                        transform="translate(-7,30)" font-family="Palatino" font-size="16px" fill="#000"
+                                        opacity="1">140</text><text text-anchor="end" transform="translate(-7,17.5)"
+                                        font-family="Palatino" font-size="16px" fill="#000" opacity="0">150</text><text
+                                        text-anchor="end" transform="translate(-7,5)" font-family="Palatino"
+                                        font-size="16px" fill="#000" opacity="1">160</text></g>
+                                <g class="mark-rule role-axis-domain" pointer-events="none">
+                                    <line transform="translate(0,200)" x2="0" y2="-200" stroke="#888" stroke-width="1"
+                                        opacity="1" />
+                                </g>
+                            </g>
+                            <path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none" />
+                        </g>
+                    </g>
+                    <g class="mark-group role-scope layer_0_pathgroup" role="graphics-object"
+                        aria-roledescription="group mark container">
+                        <g transform="translate(0,0)">
+                            <path class="background" aria-hidden="true" d="M0,0h453v200h-453Z" />
+                            <g>
+                                <g class="mark-line role-mark layer_0_marks" role="graphics-object"
+                                    aria-roledescription="line mark container">
+                                    <path aria-label="c: symbol_0; x: Jan 01, 1900; y: 145" role="graphics-symbol"
+                                        aria-roledescription="line mark"
+                                        d="M0,18.75L50.32720856656121,37.5L100.65441713312242,71.24999999999999L150.9954064249209,77.49999999999999L201.3226149914821,95L251.66360428328062,112.5L301.9908128498418,33.74999999999999L352.33180214164025,87.5L402.6590107082015,70L453,46.24999999999999"
+                                        fill-opacity="1" stroke="#bbbdb4" stroke-width="2.282525223930388" />
+                                </g>
+                            </g>
+                            <path class="foreground" aria-hidden="true" d="" display="none" />
+                        </g>
+                        <g transform="translate(0,0)">
+                            <path class="background" aria-hidden="true" d="M0,0h453v200h-453Z" />
+                            <g>
+                                <g class="mark-line role-mark layer_0_marks" role="graphics-object"
+                                    aria-roledescription="line mark container">
+                                    <path aria-label="c: symbol_1; x: Jan 01, 1900; y: 142" role="graphics-symbol"
+                                        aria-roledescription="line mark"
+                                        d="M0,22.500000000000007L50.32720856656121,89.99999999999999L100.65441713312242,127.49999999999999L150.9954064249209,130L201.3226149914821,14.999999999999991L251.66360428328062,118.75L301.9908128498418,89.99999999999999L352.33180214164025,36.25000000000001L402.6590107082015,130L453,88.75"
+                                        fill-opacity="1" stroke="#001b76" stroke-width="2.282525223930388" />
+                                </g>
+                            </g>
+                            <path class="foreground" aria-hidden="true" d="" display="none" />
+                        </g>
+                    </g>
+                    <g class="mark-symbol role-mark layer_1_marks" role="graphics-object"
+                        aria-roledescription="symbol mark container">
+                        <path aria-label="c: symbol_0; x: Jan 01, 1900; y: 145" role="graphics-symbol"
+                            aria-roledescription="point" transform="translate(0,18.75)"
+                            d="M2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,-2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,2.06458050917306,0"
+                            fill="#fffacd" fill-opacity="1" stroke="#bbbdb4" stroke-width="0.33352639142059703"
+                            opacity="1" />
+                        <path aria-label="c: symbol_0; x: Jan 01, 1910; y: 130" role="graphics-symbol"
+                            aria-roledescription="point" transform="translate(50.32720856656121,37.5)"
+                            d="M2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,-2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,2.06458050917306,0"
+                            fill="#fffacd" fill-opacity="1" stroke="#bbbdb4" stroke-width="0.33352639142059703"
+                            opacity="1" />
+                        <path aria-label="c: symbol_0; x: Jan 01, 1920; y: 103" role="graphics-symbol"
+                            aria-roledescription="point" transform="translate(100.65441713312242,71.24999999999999)"
+                            d="M2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,-2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,2.06458050917306,0"
+                            fill="#fffacd" fill-opacity="1" stroke="#bbbdb4" stroke-width="0.33352639142059703"
+                            opacity="1" />
+                        <path aria-label="c: symbol_0; x: Jan 01, 1930; y: 98" role="graphics-symbol"
+                            aria-roledescription="point" transform="translate(150.9954064249209,77.49999999999999)"
+                            d="M2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,-2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,2.06458050917306,0"
+                            fill="#fffacd" fill-opacity="1" stroke="#bbbdb4" stroke-width="0.33352639142059703"
+                            opacity="1" />
+                        <path aria-label="c: symbol_0; x: Jan 01, 1940; y: 84" role="graphics-symbol"
+                            aria-roledescription="point" transform="translate(201.3226149914821,95)"
+                            d="M2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,-2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,2.06458050917306,0"
+                            fill="#fffacd" fill-opacity="1" stroke="#bbbdb4" stroke-width="0.33352639142059703"
+                            opacity="1" />
+                        <path aria-label="c: symbol_0; x: Jan 01, 1950; y: 70" role="graphics-symbol"
+                            aria-roledescription="point" transform="translate(251.66360428328062,112.5)"
+                            d="M2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,-2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,2.06458050917306,0"
+                            fill="#fffacd" fill-opacity="1" stroke="#bbbdb4" stroke-width="0.33352639142059703"
+                            opacity="1" />
+                        <path aria-label="c: symbol_0; x: Jan 01, 1960; y: 133" role="graphics-symbol"
+                            aria-roledescription="point" transform="translate(301.9908128498418,33.74999999999999)"
+                            d="M2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,-2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,2.06458050917306,0"
+                            fill="#fffacd" fill-opacity="1" stroke="#bbbdb4" stroke-width="0.33352639142059703"
+                            opacity="1" />
+                        <path aria-label="c: symbol_0; x: Jan 01, 1970; y: 90" role="graphics-symbol"
+                            aria-roledescription="point" transform="translate(352.33180214164025,87.5)"
+                            d="M2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,-2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,2.06458050917306,0"
+                            fill="#fffacd" fill-opacity="1" stroke="#bbbdb4" stroke-width="0.33352639142059703"
+                            opacity="1" />
+                        <path aria-label="c: symbol_0; x: Jan 01, 1980; y: 104" role="graphics-symbol"
+                            aria-roledescription="point" transform="translate(402.6590107082015,70)"
+                            d="M2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,-2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,2.06458050917306,0"
+                            fill="#fffacd" fill-opacity="1" stroke="#bbbdb4" stroke-width="0.33352639142059703"
+                            opacity="1" />
+                        <path aria-label="c: symbol_0; x: Jan 01, 1990; y: 123" role="graphics-symbol"
+                            aria-roledescription="point" transform="translate(453,46.24999999999999)"
+                            d="M2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,-2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,2.06458050917306,0"
+                            fill="#fffacd" fill-opacity="1" stroke="#bbbdb4" stroke-width="0.33352639142059703"
+                            opacity="1" />
+                        <path aria-label="c: symbol_1; x: Jan 01, 1900; y: 142" role="graphics-symbol"
+                            aria-roledescription="point" transform="translate(0,22.500000000000007)"
+                            d="M2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,-2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,2.06458050917306,0"
+                            fill="#fffacd" fill-opacity="1" stroke="#001b76" stroke-width="0.33352639142059703"
+                            opacity="1" />
+                        <path aria-label="c: symbol_1; x: Jan 01, 1910; y: 88" role="graphics-symbol"
+                            aria-roledescription="point" transform="translate(50.32720856656121,89.99999999999999)"
+                            d="M2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,-2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,2.06458050917306,0"
+                            fill="#fffacd" fill-opacity="1" stroke="#001b76" stroke-width="0.33352639142059703"
+                            opacity="1" />
+                        <path aria-label="c: symbol_1; x: Jan 01, 1920; y: 58" role="graphics-symbol"
+                            aria-roledescription="point" transform="translate(100.65441713312242,127.49999999999999)"
+                            d="M2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,-2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,2.06458050917306,0"
+                            fill="#fffacd" fill-opacity="1" stroke="#001b76" stroke-width="0.33352639142059703"
+                            opacity="1" />
+                        <path aria-label="c: symbol_1; x: Jan 01, 1930; y: 56" role="graphics-symbol"
+                            aria-roledescription="point" transform="translate(150.9954064249209,130)"
+                            d="M2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,-2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,2.06458050917306,0"
+                            fill="#fffacd" fill-opacity="1" stroke="#001b76" stroke-width="0.33352639142059703"
+                            opacity="1" />
+                        <path aria-label="c: symbol_1; x: Jan 01, 1940; y: 148" role="graphics-symbol"
+                            aria-roledescription="point" transform="translate(201.3226149914821,14.999999999999991)"
+                            d="M2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,-2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,2.06458050917306,0"
+                            fill="#fffacd" fill-opacity="1" stroke="#001b76" stroke-width="0.33352639142059703"
+                            opacity="1" />
+                        <path aria-label="c: symbol_1; x: Jan 01, 1950; y: 65" role="graphics-symbol"
+                            aria-roledescription="point" transform="translate(251.66360428328062,118.75)"
+                            d="M2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,-2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,2.06458050917306,0"
+                            fill="#fffacd" fill-opacity="1" stroke="#001b76" stroke-width="0.33352639142059703"
+                            opacity="1" />
+                        <path aria-label="c: symbol_1; x: Jan 01, 1960; y: 88" role="graphics-symbol"
+                            aria-roledescription="point" transform="translate(301.9908128498418,89.99999999999999)"
+                            d="M2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,-2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,2.06458050917306,0"
+                            fill="#fffacd" fill-opacity="1" stroke="#001b76" stroke-width="0.33352639142059703"
+                            opacity="1" />
+                        <path aria-label="c: symbol_1; x: Jan 01, 1970; y: 131" role="graphics-symbol"
+                            aria-roledescription="point" transform="translate(352.33180214164025,36.25000000000001)"
+                            d="M2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,-2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,2.06458050917306,0"
+                            fill="#fffacd" fill-opacity="1" stroke="#001b76" stroke-width="0.33352639142059703"
+                            opacity="1" />
+                        <path aria-label="c: symbol_1; x: Jan 01, 1980; y: 56" role="graphics-symbol"
+                            aria-roledescription="point" transform="translate(402.6590107082015,130)"
+                            d="M2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,-2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,2.06458050917306,0"
+                            fill="#fffacd" fill-opacity="1" stroke="#001b76" stroke-width="0.33352639142059703"
+                            opacity="1" />
+                        <path aria-label="c: symbol_1; x: Jan 01, 1990; y: 89" role="graphics-symbol"
+                            aria-roledescription="point" transform="translate(453,88.75)"
+                            d="M2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,-2.06458050917306,0A2.06458050917306,2.06458050917306,0,1,1,2.06458050917306,0"
+                            fill="#fffacd" fill-opacity="1" stroke="#001b76" stroke-width="0.33352639142059703"
+                            opacity="1" />
+                    </g>
+                    <g class="mark-group role-legend" role="graphics-symbol" aria-roledescription="legend"
+                        aria-label="Symbol legend for stroke color with 2 values: symbol_0, symbol_1">
+                        <g transform="translate(474,0)">
+                            <path class="background" aria-hidden="true" d="M0,0h14v18h-14Z" pointer-events="none" />
+                            <g>
+                                <g class="mark-group role-legend-entry">
+                                    <g transform="translate(0,0)">
+                                        <path class="background" aria-hidden="true" d="M0,0h0v0h0Z"
+                                            pointer-events="none" />
+                                        <g>
+                                            <g class="mark-group role-scope" role="graphics-object"
+                                                aria-roledescription="group mark container">
+                                                <g transform="translate(0,0)">
+                                                    <path class="background" aria-hidden="true"
+                                                        d="M0,0h14v7.282525223930389h-14Z" pointer-events="none"
+                                                        opacity="1" />
+                                                    <g>
+                                                        <g class="mark-symbol role-legend-symbol" pointer-events="none">
+                                                            <path transform="translate(5,5)" d="M0,0" fill-opacity="1"
+                                                                stroke="#bbbdb4" stroke-width="2.282525223930388"
+                                                                opacity="1" />
+                                                        </g>
+                                                        <g class="mark-text role-legend-label" pointer-events="none">
+                                                            <text text-anchor="start" transform="translate(14,5)"
+                                                                font-family="sans-serif" font-size="0px" fill="#000"
+                                                                opacity="1">symbol_0</text></g>
+                                                    </g>
+                                                    <path class="foreground" aria-hidden="true" d=""
+                                                        pointer-events="none" display="none" />
+                                                </g>
+                                                <g transform="translate(0,10)">
+                                                    <path class="background" aria-hidden="true"
+                                                        d="M0,0h14v7.282525223930389h-14Z" pointer-events="none"
+                                                        opacity="1" />
+                                                    <g>
+                                                        <g class="mark-symbol role-legend-symbol" pointer-events="none">
+                                                            <path transform="translate(5,5)" d="M0,0" fill-opacity="1"
+                                                                stroke="#001b76" stroke-width="2.282525223930388"
+                                                                opacity="1" />
+                                                        </g>
+                                                        <g class="mark-text role-legend-label" pointer-events="none">
+                                                            <text text-anchor="start" transform="translate(14,5)"
+                                                                font-family="sans-serif" font-size="0px" fill="#000"
+                                                                opacity="1">symbol_1</text></g>
+                                                    </g>
+                                                    <path class="foreground" aria-hidden="true" d=""
+                                                        pointer-events="none" display="none" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <path class="foreground" aria-hidden="true" d="" pointer-events="none"
+                                            display="none" />
+                                    </g>
+                                </g>
+                            </g>
+                            <path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none" />
+                        </g>
+                    </g>
+                    <g class="mark-group role-title">
+                        <g transform="translate(226.5,-26)">
+                            <path class="background" aria-hidden="true" d="M0,0h0v0h0Z" pointer-events="none" />
+                            <g>
+                                <g class="mark-text role-title-text" role="graphics-symbol" aria-roledescription="title"
+                                    aria-label="Title text 'FACTORY HANDLE'" pointer-events="none"><text
+                                        text-anchor="middle" transform="translate(0,10)" font-family="Lucida Console"
+                                        font-size="13px" font-style="italic" font-weight="bold" fill="#000000"
+                                        opacity="1">FACTORY HANDLE</text></g>
+                            </g>
+                            <path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none" />
+                        </g>
+                    </g>
+                </g>
+                <path class="foreground" aria-hidden="true" d="" display="none" />
+            </g>
+        </g>
+    </g>
+</svg>

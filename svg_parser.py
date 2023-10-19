@@ -4,30 +4,34 @@ import glob
 import random
 import xml.etree.ElementTree as ET
 
-from svg.path import parse_path
 from PIL import Image, ImageDraw
 # matplotlib
 import matplotlib.pyplot as plt
 import cairosvg
+from svglib.svglib import svg2rlg
+from reportlab.graphics import renderPDF, renderPM
 import tqdm
+
+
+def convert_svg_to_png(svg_file_path):
+    # get svg file name without extension
+    svg_file_name = os.path.splitext(svg_file_path)[0]
+    # convert svg to png
+    cairosvg.svg2png(url=svg_file_path, write_to=svg_file_name + '.png')
+    return svg_file_name + '.png'
 
 
 def parse_svg_rectangles(svg_file_path):
     tree = ET.parse(svg_file_path)
     root = tree.getroot()
-
     # which path node and start with d=...
     rectangles = []
-
     g_nodes = root.findall("{http://www.w3.org/2000/svg}g")[0]
     x_offset, y_offset = g_nodes.attrib['transform'].split('(')[1].split(')')[0].split(',')[0:2]
-
     # using regex to find all path-d nodes
     regex = re.compile(r'path d="M(\d+\.?\d*),(\d+\.?\d*)h(\d+\.?\d*)v(\d+\.?\d*)h-(\d+\.?\d*)Z"\s *style="fill: (#[0-9a-fA-F]*)')
-
     # load svg file to string
     svg_str = ET.tostring(root, encoding='utf8', method='xml').decode('utf8')
-
     # for all path nodes
     for path_node in regex.findall(svg_str):
         x, y, w, h, _, c = path_node
@@ -38,13 +42,35 @@ def parse_svg_rectangles(svg_file_path):
     return rectangles
 
 
-def svg2yolo(dir_path):
+def parse_svg_lines(svg_file_path):
+    tree = ET.parse(svg_file_path)
+    root = tree.getroot()
+    # which path node and start with d=...
+    rectangles = []
+    g_nodes = root.findall("{http://www.w3.org/2000/svg}g")[0]
+    x_offset, y_offset = g_nodes.attrib['transform'].split('(')[1].split(')')[0].split(',')[0:2]
+    # using regex to find all path-d nodes
+    regex = re.compile(r'path d="M(\d+\.?\d*),(\d+\.?\d*)h(\d+\.?\d*)v(\d+\.?\d*)h-(\d+\.?\d*)Z"\s *style="fill: (#[0-9a-fA-F]*)')
+    # load svg file to string
+    svg_str = ET.tostring(root, encoding='utf8', method='xml').decode('utf8')
+    # for all path nodes
+    for path_node in regex.findall(svg_str):
+        x, y, w, h, _, c = path_node
+        # add x, y offset
+        x, y = float(x) + float(x_offset), float(y) + float(y_offset)
+        rectangles.append((x, y, float(w), float(h), c))
+
+    return rectangles
+
+
+def svg2yolo_bar(dir_path):
     svgs = glob.glob(os.path.join(dir_path, '*.svg'))
     for svg_file_path in tqdm.tqdm(svgs):
         # get svg file name without extension
         svg_file_name = os.path.splitext(svg_file_path)[0]
         # convert svg to png
-        cairosvg.svg2png(url=svg_file_path, write_to=svg_file_name + '.png')
+        convert_svg_to_png(svg_file_path)
+
         # write to yolo txt file format as (x, y, w, h, c)
         rectangles = parse_svg_rectangles(svg_file_path)
         # write to txt file
@@ -55,14 +81,32 @@ def svg2yolo(dir_path):
                 f.write(f'{x},{y},{w},{h},{c}\n')
 
 
-def show_data(svg_path):
+def svg2yolo_line(dir_path):
+    svgs = glob.glob(os.path.join(dir_path, '*.svg'))
+    for svg_file_path in tqdm.tqdm(svgs):
+        # get svg file name without extension
+        svg_file_name = os.path.splitext(svg_file_path)[0]
+        # # convert svg to png
+        # convert_svg_to_png(svg_file_path)
+
+        # write to yolo txt file format as (x, y, w, h, c)
+        rectangles = parse_svg_lines(svg_file_path)
+        # write to txt file
+        with open(svg_file_name + '.txt', 'w') as f:
+            for rectangle in rectangles:
+                x, y, w, h, c = rectangle
+                # write to file
+                f.write(f'{x},{y},{w},{h},{c}\n')
+
+
+def show_data_bar(svg_path):
     rectangles = parse_svg_rectangles(svg_path)
 
     # Convert SVG to PNG
-    cairosvg.svg2png(url=svg_path, write_to='tmp.png')
+    png_path = convert_svg_to_png(svg_path)
 
     # draw rectangles on raw image via PIL
-    im = Image.open('tmp.png')
+    im = Image.open(png_path)
     draw = ImageDraw.Draw(im)
 
     for rectangle in rectangles:
@@ -74,13 +118,14 @@ def show_data(svg_path):
         draw.text((x + w / 2, y + h / 2), "+", fill=(255, 0, 0))
 
     # save to image
-    im.save('tmp.png')
+    im.save(png_path)
 
 
 # main
 if __name__ == "__main__":
     # # convert all svg files to png and yolo txt file
-    svg2yolo('h_data')
+    # svg2yolo_bar('')
+    svg2yolo_line('')
 
     # # show data
-    # show_data('chart.svg')
+    # show_data_bar('chart.svg')
