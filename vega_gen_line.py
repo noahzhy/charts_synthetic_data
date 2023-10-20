@@ -115,7 +115,7 @@ def old_theme():
                 # point color
                 "point": {
                     "filled": False,
-                    "size": random.uniform(20, 40),
+                    "size": random.uniform(25, 40),
                     "fillOpacity": 1,
                     "fill": current_bg_color,
                     # stroke width
@@ -161,16 +161,11 @@ def random_bar(x_num=10, y_max=100, y_min=0):
 
     datas = pd.DataFrame()
     for i in range(random.randint(2, 4)):
-        # random start value in [0, 50]
-        _y_start = random.randint(0, 100)
-        # random y_max and y_min from [0, 200]
-        _y_min = random.randint(_y_start, 200)
-        _y_max = max(_y_min, 300)
         # random date
         _date = pd.date_range('1900', '2000', freq='{}Y'.format(_y_step))[:x_num]
         _date = _date.strftime('%Y')
         # random price
-        _price = np.random.randint(_y_min, _y_max, size=len(_date))
+        _price = np.random.randint(50, 200, size=len(_date))
         # /= random.uniform(1, 10)
         _price = _price / random.choice([1, 1, 2, 3, 5, 8])
         # add to datas
