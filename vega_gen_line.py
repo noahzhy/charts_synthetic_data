@@ -110,16 +110,16 @@ def old_theme():
             # line color
             "line": {
                 "filled": False,
-                "strokeWidth": random.uniform(1.5, 3.5),
+                "strokeWidth": random.uniform(3.0, 5.0),
                 "fillOpacity": 1,
                 # point color
                 "point": {
                     "filled": False,
-                    "size": random.uniform(10, 20),
+                    "size": random.uniform(20, 40),
                     "fillOpacity": 1,
                     "fill": current_bg_color,
                     # stroke width
-                    "strokeWidth": random.uniform(0.2, 1.0),
+                    "strokeWidth": random.uniform(0.5, 1.0),
                 } if random.uniform(0, 1) > 0.5 else {
                     "filled": True,
                 },
@@ -157,27 +157,25 @@ def random_bar(x_num=10, y_max=100, y_min=0):
         x_num = random.randint(x_num[0], x_num[1])
 
     # random year invertal
-    _y_step = random.randint(1, 20)
+    _y_step = random.randint(5, 20)
 
     datas = pd.DataFrame()
     for i in range(random.randint(2, 4)):
         # random start value in [0, 50]
         _y_start = random.randint(0, 100)
-        # random y_max and y_min from [0, 100]
+        # random y_max and y_min from [0, 200]
         _y_min = random.randint(_y_start, 200)
         _y_max = max(_y_min, 300)
-        # random symbol
-        _symbol = random_color()
         # random date
         _date = pd.date_range('1900', '2000', freq='{}Y'.format(_y_step))[:x_num]
         _date = _date.strftime('%Y')
         # random price
         _price = np.random.randint(_y_min, _y_max, size=len(_date))
         # /= random.uniform(1, 10)
-        _price = _price / random.uniform(1, 10)
+        _price = _price / random.choice([1, 1, 2, 3, 5, 8])
         # add to datas
         symbol_data = pd.DataFrame({
-            'c': _symbol,
+            'c': i,
             'x': _date,
             'y': _price,
         })
@@ -215,7 +213,8 @@ def synth_data(save_dir='data', debug=False):
         color=alt.Color("c:N", scale=alt.Scale(range=random.sample(colors, 10))),
     ).properties(
         # x-axis scale
-        width=random.randint(200, 500),
+        width=random.randint(400, 500),
+        height=random.randint(300, 400),
     )
 
     _fname = random_file_name() if not debug else 'debug'
