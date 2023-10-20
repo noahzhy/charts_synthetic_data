@@ -107,16 +107,10 @@ def old_theme():
             },
             # transparent background
             "background": random_background(),
-            # bar color
-            # "mark": {
-            #     "color": random_color(),
-            #     "stroke": "#000" if random.uniform(0, 1) > 0.5 else "transparent",
-            #     "strokeWidth": random.uniform(1.0, 3.5),
-            # },
             # line color
             "line": {
                 "filled": False,
-                "strokeWidth": random.uniform(1.0, 3.5),
+                "strokeWidth": random.uniform(1.5, 3.5),
                 "fillOpacity": 1,
                 # point color
                 "point": {
@@ -156,13 +150,6 @@ def random_file_name():
     return _name
 
 
-# # func to generate random properties
-# def random_properties():
-#     return {
-#         'width': random.randint(18, 25),
-#     }
-
-
 # func to generate random data
 def random_bar(x_num=10, y_max=100, y_min=0):
     # random pick via x_num if list
@@ -175,17 +162,19 @@ def random_bar(x_num=10, y_max=100, y_min=0):
     datas = pd.DataFrame()
     for i in range(random.randint(2, 4)):
         # random start value in [0, 50]
-        _y_start = random.randint(0, 80)
+        _y_start = random.randint(0, 100)
         # random y_max and y_min from [0, 100]
-        _y_min = random.randint(_y_start, 100)
-        _y_max = max(_y_min, 150)
+        _y_min = random.randint(_y_start, 200)
+        _y_max = max(_y_min, 300)
         # random symbol
-        _symbol = "symbol_" + str(i)
+        _symbol = random_color()
         # random date
         _date = pd.date_range('1900', '2000', freq='{}Y'.format(_y_step))[:x_num]
         _date = _date.strftime('%Y')
         # random price
         _price = np.random.randint(_y_min, _y_max, size=len(_date))
+        # /= random.uniform(1, 10)
+        _price = _price / random.uniform(1, 10)
         # add to datas
         symbol_data = pd.DataFrame({
             'c': _symbol,
@@ -213,7 +202,7 @@ def random_title():
 
 def synth_data(save_dir='data', debug=False):
     # properties = random_properties()
-    data = random_bar(x_num=[10, 20])
+    data = random_bar(x_num=[5, 25])
 
     charts = alt.Chart(
         data,
@@ -222,7 +211,8 @@ def synth_data(save_dir='data', debug=False):
     ).encode(
         x="x:T",
         y="y:Q",
-        color='c:N',
+        # 根据 c 列的值来着色
+        color=alt.Color("c:N", scale=alt.Scale(range=random.sample(colors, 10))),
     ).properties(
         # x-axis scale
         width=random.randint(200, 500),
