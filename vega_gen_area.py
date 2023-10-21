@@ -20,10 +20,12 @@ fonts = [
     'Arial Unicode MS', 'Impact', 'Lucida Console', 'Tahoma',
 ]
 colors = [
-    '#bbbdb4', '#001b76', '#c9b598', '#854059', '#252900',
-    '#bac588', '#947360', '#2d0e00', '#aa2b0b', '#eaa177',
-    '#937c6f', '#d4b2a1', '#e5cfbe', '#ad9585', '#ca663f',
-    '#b7b1a4', '#9a0800', '#947c6f', '#d2a235', '#c8beae',
+    '#e35331', '#001b76', '#be7668', '#854059', '#7c8e6e',
+    '#bac588', '#59755c', '#525775', '#aa2b0b', '#eaa177',
+    '#56769d', '#d4b2a1', '#753b4f', '#eda64a', '#ca663f',
+    '#f1b89c', '#9a0800', '#e29782', '#d2a235', '#b1b789',
+    '#f7cf56', '#b3c2a1', '#e1524c', '#526484', '#a5c4bf',
+    '#e5c1b4', '#9e5d68', '#f0b080', '#e5a0a3', '#964324',
 ]
 backgrounds = [
     '#ffffff', '#f0f0f0', '#f5f5f5', '#f8f8f8', '#fbfbfb',
@@ -77,7 +79,7 @@ def old_theme():
                 "gridColor": '#000000',
                 # transparent
                 "gridOpacity": random.uniform(0.2, 0.8),
-                "gridWidth": random.uniform(0.2, 1.0),
+                "gridWidth": random.uniform(0.5, 1.5),
                 "labelAngle": 0,
                 # font
                 "labelFont": random.choice(fonts),
@@ -94,7 +96,7 @@ def old_theme():
                 "grid": True,
                 "gridColor": '#000000',
                 "gridOpacity": random.uniform(0.2, 0.8),
-                "gridWidth": random.uniform(0.2, 1.5),
+                "gridWidth": random.uniform(0.5, 1.5),
                 "labelAngle": 0,
                 # font
                 "labelFont": random.choice(fonts),
@@ -104,6 +106,17 @@ def old_theme():
                 "tickCount": random.randint(5, 20),
                 # hide stick
                 "ticks": False if random.uniform(0, 1) > 0.5 else True,
+            },
+            # area
+            "area": {
+                # hide area
+                "fill": random_color(),
+                "fillOpacity": random.uniform(0.5, 0.8),
+                "strokeWidth": random.uniform(0.2, 0.8),
+                # stroke color
+                "stroke": "#000" if random.uniform(0, 1) > 0.5 else "transparent",
+                # # grid on top
+                # "zindex": 1,
             },
             # transparent background
             "background": random_background(),
@@ -130,7 +143,7 @@ def random_file_name():
 
 
 # func to generate random data
-def random_bar(x_num=10, y_max=100, y_min=0):
+def random_data(x_num=10, y_max=100, y_min=0):
     # random pick via x_num if list
     if isinstance(x_num, list):
         x_num = random.randint(x_num[0], x_num[1])
@@ -172,7 +185,7 @@ def random_title():
 
 def synth_data(save_dir='data', debug=False):
     # properties = random_properties()
-    data = random_bar(x_num=[10, 25])
+    data = random_data(x_num=[15, 25])
 
     charts = alt.Chart(
         data,

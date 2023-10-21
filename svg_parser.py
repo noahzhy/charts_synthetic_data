@@ -52,7 +52,7 @@ def parse_svg_lines(svg_file_path):
     print("x_offset: ", x_offset, "\ny_offset: ", y_offset)
     # using regex to find all path-d nodes
     regex = re.compile(r'd=\"M[L0-9,.]{4,}\"')
-    regex2 = re.compile(r'[[ML](\d+\.?\d*),(\d+\.?\d*)]*')
+    regex2 = re.compile(r'[ML](\d+\.?\d*),(\d+\.?\d*)]*')
     # load svg file to string
     svg_str = ET.tostring(root, encoding='utf8', method='xml').decode('utf8')
     # for all path nodes
@@ -67,15 +67,39 @@ def parse_svg_lines(svg_file_path):
     return lines
 
 
+def parse_svg_area(svg_file_path):
+    tree = ET.parse(svg_file_path)
+    root = tree.getroot()
+    # which path node and start with d=...
+    lines = []
+    g_nodes = root.findall("{http://www.w3.org/2000/svg}g")[0]
+    x_offset, y_offset = g_nodes.attrib['transform'].split('(')[1].split(')')[0].split(',')[0:2]
+    print("x_offset: ", x_offset, "\ny_offset: ", y_offset)
+    # using regex to find all path-d nodes
+    regex = re.compile(r'd=\"M[L0-9,.]{4,}Z\"')
+    regex2 = re.compile(r'[ML](\d+\.?\d*),(\d+\.?\d*)]*')
+    # load svg file to string
+    svg_str = ET.tostring(root, encoding='utf8', method='xml').decode('utf8')
+    # for all path nodes
+    for idx, line_node in enumerate(regex.findall(svg_str)):
+        for xy_node in regex2.findall(line_node):
+            x, y = xy_node
+            # ad x, y offset
+            x, y = float(x) + float(x_offset), float(y) + float(y_offset)
+            lines.append((x, y, idx))
+
+    return lines
+
+
 def svg2yolo_bar(dir_path):
     svgs = glob.glob(os.path.join(dir_path, '*.svg'))
     for svg_file_path in tqdm.tqdm(svgs):
         # get svg file name without extension
         svg_file_name = os.path.splitext(svg_file_path)[0]
-        # convert svg to png
-        convert_svg_to_png(svg_file_path)
         # write to yolo txt file format as (x, y, w, h, c)
         rectangles = parse_svg_rectangles(svg_file_path)
+        # convert svg to png
+        convert_svg_to_png(svg_file_path)
         # write to txt file
         with open(svg_file_name + '.txt', 'w') as f:
             for rectangle in rectangles:
@@ -89,10 +113,27 @@ def svg2yolo_line(dir_path):
     for svg_file_path in tqdm.tqdm(svgs):
         # get svg file name without extension
         svg_file_name = os.path.splitext(svg_file_path)[0]
-        # convert svg to png
-        convert_svg_to_png(svg_file_path)
         # write to yolo txt file format as (x, y, w, h, c)
         lines = parse_svg_lines(svg_file_path)
+        # convert svg to png
+        convert_svg_to_png(svg_file_path)
+        # write to txt file
+        with open(svg_file_name + '.txt', 'w') as f:
+            for line in lines:
+                x, y, c = line
+                # write to file
+                f.write(f'{x},{y},{c}\n')
+
+
+def svg2yolo_area(dir_path):
+    svgs = glob.glob(os.path.join(dir_path, '*.svg'))
+    for svg_file_path in tqdm.tqdm(svgs):
+        # get svg file name without extension
+        svg_file_name = os.path.splitext(svg_file_path)[0]
+        # write to yolo txt file format as (x, y, w, h, c)
+        lines = parse_svg_area(svg_file_path)
+        # convert svg to png
+        convert_svg_to_png(svg_file_path)
         # write to txt file
         with open(svg_file_name + '.txt', 'w') as f:
             for line in lines:
@@ -138,12 +179,32 @@ def show_data_line(svg_path):
     im.save(png_path)
 
 
+def show_data_area(svg_path):
+    lines = parse_svg_area(svg_path)
+    # Convert SVG to PNG
+    # png_path = convert_svg_to_png(svg_path)
+    png_path = svg_path.replace('.svg', '.png')
+    # draw rectangles on raw image via PIL
+    im = Image.open(png_path)
+    draw = ImageDraw.Draw(im)
+
+    for line in lines:
+        x, y, idx = line
+        draw.point((x, y), fill=(255, 0, 0))
+        draw.text((x, y), "#", fill=(255, 0, 0))
+
+    # save to image
+    im.save(png_path)
+
+
 # main
 if __name__ == "__main__":
     # # convert all svg files to png and yolo txt file
     # svg2yolo_bar('')
-    svg2yolo_line('')
+    # svg2yolo_line('')
+    # svg2yolo_area('')
 
     # # show data
-    # show_data_bar('chart.svg')
-    show_data_line('debug.svg')
+    # show_data_bar('debug.svg')
+    # show_data_line('debug.svg')
+    show_data_area('debug.svg')

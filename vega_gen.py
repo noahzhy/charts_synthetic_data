@@ -132,7 +132,7 @@ def random_properties():
 
 
 # func to generate random data
-def random_bar(x_num=10, y_max=100, y_min=0):
+def random_data(x_num=10, y_max=100, y_min=0):
     # random pick via x_num if list
     if isinstance(x_num, list):
         x_num = random.randint(x_num[0], x_num[1])
@@ -174,7 +174,7 @@ def random_title():
 
 def synth_data(save_dir='data'):
     properties = random_properties()
-    data = pd.DataFrame(random_bar(x_num=[5, 25]))
+    data = pd.DataFrame(random_data(x_num=[5, 25]))
 
     charts = alt.Chart(
         data,

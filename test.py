@@ -1,14 +1,19 @@
-import re
+import altair as alt
+from vega_datasets import data
 
-# 输入字符串
-d = "M0,18.75L50.32720856656121,37.5L100.65441713312242,71.24999999999999L150.9954064249209,77.49999999999999L201.3226149914821,95L251.66360428328062,112.5L301.9908128498418,33.74999999999999L352.33180214164025,87.5L402.6590107082015,70L453,46.24999999999999"
+source = data.cars()
 
-# 定义正则表达式模式
-pattern = r'[ML]\d+\.\d+,?\d*'
-
-# 使用正则表达式找到匹配项
-matches = re.findall(pattern, d)
-
-# 打印匹配项
-for match in matches:
-    print(match)
+chart = alt.Chart(source).mark_circle(size=60, clip=False).transform_calculate(
+    x = alt.datum.Horsepower-100,
+    y = alt.datum.Miles_per_Gallon - 25
+).encode(
+    x=alt.X('x:Q', axis=alt.Axis(offset=-150)),
+    y=alt.Y('y:Q', axis=alt.Axis(offset=-190)),
+    color='Origin',
+).configure_axisX(
+    domainWidth =3
+).configure_axisY(
+    domainWidth =3
+)
+# save
+chart.save('debug.svg')
