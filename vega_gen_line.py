@@ -162,14 +162,14 @@ def random_data(x_num=10, y_max=100, y_min=0):
     _y_step = random.randint(5, 20)
 
     datas = pd.DataFrame()
-    for i in range(random.randint(2, 4)):
+    for i in range(random.randint(2, 3)):
         # random date
         _date = pd.date_range('1900', '2000', freq='{}Y'.format(_y_step))[:x_num]
         _date = _date.strftime('%Y')
         # random price
         _price = np.random.randint(50, 200, size=len(_date))
         # /= random.uniform(1, 10)
-        _price = _price / random.choice([1, 1, 2, 3, 5, 8])
+        _price = _price / random.choice([1, 3, 5, 8])
         # add to datas
         symbol_data = pd.DataFrame({
             'c': i,
@@ -210,20 +210,20 @@ def synth_data(save_dir='data', debug=False):
         color=alt.Color("c:N", scale=alt.Scale(range=random.sample(colors, 10))),
     ).properties(
         # x-axis scale
-        width=random.randint(400, 500),
+        width=random.randint(300, 400),
         height=random.randint(300, 400),
     )
 
     _fname = random_file_name() if not debug else 'debug'
 
     # save to .svg file
-    print('===========')
+    # print('===========')
     # get theme background color
     charts.save(os.path.join(save_dir, _fname + '.svg'))
-    print('save to', os.path.join(save_dir, _fname + '.svg'))
+    # print('save to', os.path.join(save_dir, _fname + '.svg'))
 
 
 # main
 if __name__ == "__main__":
-    for i in tqdm.tqdm(range(1)):
-        synth_data(save_dir='', debug=True)
+    for i in tqdm.tqdm(range(30000)):
+        synth_data(save_dir='data', debug=False)
