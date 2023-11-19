@@ -201,10 +201,10 @@ def show_data_area(svg_path):
 if __name__ == "__main__":
     # # convert all svg files to png and yolo txt file
     # svg2yolo_bar('')
-    # svg2yolo_line('')
+    svg2yolo_line('data')
     # svg2yolo_area('')
 
     # # show data
     # show_data_bar('debug.svg')
     # show_data_line('debug.svg')
-    show_data_area('debug.svg')
+    # show_data_area('debug.svg')
