@@ -204,13 +204,13 @@ def synth_data(save_dir='data', debug=False):
     _fname = random_file_name() if not debug else 'debug'
 
     # save to .svg file
-    print('===========')
+    # print('===========')
     # get theme background color
     charts.save(os.path.join(save_dir, _fname + '.svg'))
-    print('save to', os.path.join(save_dir, _fname + '.svg'))
+    # print('save to', os.path.join(save_dir, _fname + '.svg'))
 
 
 # main
 if __name__ == "__main__":
-    for i in tqdm.tqdm(range(1)):
-        synth_data(save_dir='', debug=True)
+    for i in tqdm.tqdm(range(40000)):
+        synth_data(save_dir='data', debug=False)

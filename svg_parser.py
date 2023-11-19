@@ -202,7 +202,7 @@ if __name__ == "__main__":
     # # convert all svg files to png and yolo txt file
     # svg2yolo_bar('')
     svg2yolo_line('data')
-    # svg2yolo_area('')
+    # svg2yolo_area('data')
 
     # # show data
     # show_data_bar('debug.svg')

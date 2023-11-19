@@ -225,5 +225,5 @@ def synth_data(save_dir='data', debug=False):
 
 # main
 if __name__ == "__main__":
-    for i in tqdm.tqdm(range(30000)):
+    for i in tqdm.tqdm(range(10)):
         synth_data(save_dir='data', debug=False)
